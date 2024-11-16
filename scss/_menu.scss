@@ -1,0 +1,87 @@
+header {
+    display: flex;
+    min-width: 100%;
+    padding: 0.5em;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DAD9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    .logo {
+        img {
+            width: 68px;
+            height: 24.899px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .sidbar {
+        #menu-btn, #close-btn  {
+            background: none;
+            padding: 0.3em;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        #menu-btn {
+            width: 36px;
+            height: 14px;
+        }
+        #close-btn{
+            width: 25.456px;
+            height: 25.456px;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -100%; /* Position initiale hors de l'écran */
+            width: 75%; /* Largeur de la sidebar */
+            height: 100vh;
+            background-color: #DAD9D9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            gap: 0.5em;
+            transition: right 0.3s ease; /* Transition pour un mouvement fluide */
+
+            #close-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            a {
+                text-decoration: none;
+                color: #4E4E4E;
+                transition: transform 0.2s ease-in-out;
+                &:focus, &:active, &:hover {
+                    color: #4DA8DA;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+            .active {
+                color: #4DA8DA;
+                
+            }
+
+        }
+    }
+}

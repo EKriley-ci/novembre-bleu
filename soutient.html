@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="auto" content="Esmel kevin ">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
+    <title>Movenbre</title>
+</head>
+<body >
+    <header>
+        <div class="logo">
+            <a href="Acceuil.html"><img src="img/movembre logo.svg" alt="logo de movembre" title="logo de Movenbre" ></a>
+        </div>
+
+        <div class="sidbar">
+            <!-- bouton pour ouvrir la sidebar -->
+             <button id="menu-btn" onclick="toggleSidebar()"><img src="img/menu icon.png" alt="menu"></button>
+             <!-- Sidebar -->
+              <div class="sidebar" id="sideBar">
+                <!-- bouton pour fermer la sidebar -->
+                 <button id="close-btn" onclick="toggleSidebar()"><img src="img/close icon.svg" alt="fermer le menu"></button>
+                 <a href="Acceuil.html" class="sidebar-links " >accueil</a>
+                 <a href="info.html" class="sidebar-links ">info essentiel</a>
+                 <a href="quiz.html" class="sidebar-links ">quiz</a>
+                 <a href="soutient.html" class="sidebar-links active">soutient</a>
+
+              </div>
+        </div>
+    </header>
+
+    <main class="soutient">
+        <div class="title">
+            <h1>message de soutient</h1>
+                <h3>lisez et partager des encouragement pour soutenir novembre bleu</h3>
+        </div>
+
+        <!-- dive pour afficher les commentaire -->
+         <div class="comments-container">
+            <!-- commentaires par defaut -->
+            <div class="commentCarte">
+                <p class="message">
+                    C'est un honneur de collaborer sur ce projet avec toute la classe. Ensemble, nous apportons notre contribution à une cause importante. Continuons à sensibiliser et à partager pour soutenir Novembre Bleu !
+                </p>
+                <div class="person">
+                    <img src="img/person/okoue.png" alt="okoue">
+                   <div> <strong>Okoue Jean</strong>
+                    <p class="date">18/11/2024</p></div>
+                </div>
+ <a href="#commentForm">
+                 <button>laisser votre commentaire</button>
+
+                </a>            </div>
+            <div class="commentCarte">
+                <p class="message">
+                    Votre travail est formidable. Continuons à sensibiliser et à soutenir tous ceux qui en ont besoin. Novembre Bleu mérite toute notre attention.
+                </p>
+                <div class="person">
+                    <img src="img/person/Sophie M.jpeg" alt="Sophie">
+                   <div> <strong>Sophie M.</strong>
+                    <p class="date">18/11/2024</p></div>
+                </div>
+ <a href="#commentForm">
+                 <button>laisser votre commentaire</button>
+
+                </a>            </div>
+            <div class="commentCarte">
+                <p class="message">
+                    Un petit mot pour rappeler à tous : n'hésitez pas à parler, à demander de l'aide, et à encourager vos proches à faire de même. Soutenons Novembre Bleu !
+                </p>
+                <div class="person">
+                    <img src="img/person/Marc.jpeg" alt="Sophie">
+                   <div> <strong>Lamine.</strong>
+                    <p class="date">18/11/2024</p></div>
+                </div>
+ <a href="#commentForm">
+                 <button>laisser votre commentaire</button>
+
+                </a>            </div>
+            <div class="commentCarte">
+                <p class="message">
+                    Super site ! C'est motivant de voir un espace dédié à la santé des hommes. Je vais partager ça avec mes amis, c'est important qu'on soit tous informés.
+                </p>
+                <div class="person">
+                    <img src="img/person/mika.jpeg" alt="Sophie">
+                   <div> <strong>Mika noir.</strong>
+                    <p class="date">18/11/2024</p></div>
+                </div>
+ <a href="#commentForm">
+                 <button>laisser votre commentaire</button>
+
+                </a>            </div>
+            <div class="commentCarte">
+                <p class="message">
+                    Super site ! C'est motivant de voir un espace dédié à la santé des hommes. Je vais partager ça avec mes amis, c'est important qu'on soit tous informés.
+                </p>
+                <div class="person">
+                    <img src="img/person/mika.jpeg" alt="Sophie">
+                   <div> <strong>Mika noir.</strong>
+                    <p class="date">18/11/2024</p></div>
+                </div>
+ <a href="#commentForm">
+                 <button>laisser votre commentaire</button>
+
+                </a>            </div>
+            <div class="commentCarte">
+                <p class="message">
+                    Super site ! C'est motivant de voir un espace dédié à la santé des hommes. Je vais partager ça avec mes amis, c'est important qu'on soit tous informés.
+                </p>
+                <div class="person">
+                    <img src="img/person/mika.jpeg" alt="Sophie">
+                   <div> <strong>Mika noir.</strong>
+                    <p class="date">18/11/2024</p></div>
+                </div>
+                <a href="#commentForm">
+  <a href="#commentForm">
+                 <button>laisser votre commentaire</button>
+
+                </a>
+                </a>
+            </div>
+
+            <!-- les nouveaux commentaires s'afficherons  ici -->
+         </div>
+
+
+         <!-- form pour les commentaires -->
+
+         <div class="comment-form">
+            <h3>Laissez ici votre commentaire  </h3>
+            <form id="commentForm">
+                <input type="text" id="username" placeholder="Votre nom" required>
+                <input type="file" id="userPhoto" accept="image/*">
+                <textarea id="commentText" rows="4" placeholder="Écris ton commentaire ici..." required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+            
+</main>
+
+
+    <footer>
+        <p>
+            <i>
+                Un site dédié a la sensibilisation pour novembre Blue
+            </i>
+        </p>
+        <p>
+            Esmel kevin &copy;2024 - ESMA IDA 1
+        </p>
+    </footer>
+<script src="script.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

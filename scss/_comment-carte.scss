@@ -1,0 +1,84 @@
+.soutient {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .comments-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1.5em;
+        .commentCarte {
+            width: 100%;
+            max-width: 300px;
+            max-height: 480px;
+            border-radius: 30px;
+            border: 3px solid #235889;
+            background: #F2F2F2;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5em;
+    
+            .message {
+                font-size: 1.3rem;
+            }
+            .person {
+                display: flex;
+                align-self: flex-start;
+                align-items: center;
+                gap: 0.3em;
+                img {
+                    max-width: 70px;
+                    width: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: center;
+                    border: 3px solid #4DA8DA;
+    
+                }
+                div {
+                    strong {
+                        text-transform: uppercase;
+                    }
+                    p{
+                        color: #4E4E4E;
+                    }
+                    .date {
+                        &::before {
+                            content: "Publié le ";
+                        }
+                    }
+                    .meta {
+                        color: #4E4E4E;
+                    }
+                }
+            }
+            button {
+             color: #FFF;
+            font-family: Poppins;
+            font-style: normal;
+           line-height: normal;
+            text-transform: uppercase;
+            padding: 1em 2em;
+            border-radius: 8px;
+            background: #4DA8DA;
+            border: none;
+            width: 100%;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            transition: background 0.3s ease-in-out;
+            &:hover {
+            background: #296FA6;
+    
+            }
+            &:active {
+                transform: scale(0.98);
+            }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="auto" content="Esmel kevin ">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
+    <title>Movenbre</title>
+</head>
+<body >
+    <header>
+        <div class="logo">
+            <a href="Acceuil.html"><img src="img/movembre logo.svg" alt="logo de movembre" title="logo de Movenbre" ></a>
+        </div>
+
+        <div class="sidbar">
+            <!-- bouton pour ouvrir la sidebar -->
+             <button id="menu-btn" onclick="toggleSidebar()"><img src="img/menu icon.png" alt="menu"></button>
+             <!-- Sidebar -->
+              <div class="sidebar" id="sideBar">
+                <!-- bouton pour fermer la sidebar -->
+                 <button id="close-btn" onclick="toggleSidebar()"><img src="img/close icon.svg" alt="fermer le menu"></button>
+                 <a href="Acceuil.html" class="sidebar-links " >accueil</a>
+                 <a href="info.html" class="sidebar-links ">info essentiel</a>
+                 <a href="quiz.html" class="sidebar-links active">quiz</a>
+                 <a href="soutient.html" class="sidebar-links">soutient</a>
+
+              </div>
+        </div>
+    </header>
+
+    <main class="quiz">
+        <div class="title">
+            <h1>testez vos connaissances</h1>
+                <h3>répondez à quelque question pour voir ce que vous savez sur la santé masculine</h3>
+            </div>
+        <div class="quiz-card">
+            <div id="quiz">
+            <!-- Les questions et options seront ajoutées ici via JavaScript -->
+            </div>
+            <button class="btn-verify" onclick="verifierReponses()">Vérifier Vos Réponses</button>
+            <p id="result" style="text-align: center; margin-top: 10px;"></p>
+        </div>
+
+        <p>
+            Maintenant, pourquoi ne pas soutenir nos frères qui souffrent en leur donnant quelques astuces de santé ?<a href="soutient.html"><button>Cliquez ici</button></a> pour les aider et faire une différence ensemble.    </p>
+</main>
+
+
+    <footer>
+        <p>
+            <i>
+                Un site dédié a la sensibilisation pour novembre Blue
+            </i>
+        </p>
+        <p>
+            Esmel kevin &copy;2024 - ESMA IDA 1
+        </p>
+    </footer>
+<script src="script.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
