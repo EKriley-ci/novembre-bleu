@@ -394,8 +394,8 @@ main p button:active {
 }
 .soutient .comments-container .commentCarte {
   width: 100%;
-  max-width: 300px;
-  max-height: 480px;
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
   border: 3px solid #235889;
   background: #F2F2F2;
@@ -561,12 +561,6 @@ main p button:active {
   header .sidbar .sidebar a {
     color: #FFFFFF;
   }
-  header .sidbar .sidebar a:focus, header .sidbar .sidebar a:hover {
-    transform: translateY(-10px);
-  }
-  header .sidbar .sidebar .active {
-    transform: translateY(-10px);
-  }
   main {
     margin-bottom: 4.8em;
   }
@@ -575,7 +569,7 @@ main p button:active {
     align-items: center;
   }
   main .title h1 {
-    font-size: 4.5em;
+    font-size: clamp(2.4em, 2em + 5vh, 4.5em);
     text-align: start;
     width: 80%;
   }

@@ -32,14 +32,6 @@
                 font-size: 1rem;
                 a {
                     color: #FFFFFF;
-                    &:focus, &:hover {
-                    transform: translateY(-10px);
-
-                    }
-    
-                }
-                .active {
-                    transform: translateY(-10px);
                 }
             }
         }
@@ -52,7 +44,7 @@
             text-align: start;
             align-items: center;
             h1 {
-                font-size: 4.5em;
+                font-size: clamp(2.4em ,calc(2em + 5vh)  ,4.5em);
                 text-align: start;
                 width: 80%;
                 
