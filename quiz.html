@@ -6,6 +6,8 @@
     <meta name="auto" content="Esmel kevin ">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Movenbre</title>
 </head>
 <body >
@@ -16,18 +18,31 @@
 
         <div class="sidbar">
             <!-- bouton pour ouvrir la sidebar -->
-             <button id="menu-btn" onclick="toggleSidebar()"><img src="img/menu icon.png" alt="menu"></button>
-             <!-- Sidebar -->
-              <div class="sidebar" id="sideBar">
-                <!-- bouton pour fermer la sidebar -->
-                 <button id="close-btn" onclick="toggleSidebar()"><img src="img/close icon.svg" alt="fermer le menu"></button>
-                 <a href="index.html" class="sidebar-links " >accueil</a>
-                 <a href="info.html" class="sidebar-links ">info essentiel</a>
-                 <a href="quiz.html" class="sidebar-links active">quiz</a>
-                 <a href="soutient.html" class="sidebar-links">soutient</a>
-
-              </div>
-        </div>
+            <button id="menu-btn" onclick="toggleSidebar()">
+              <img src="img/menu icon.png" alt="menu">
+            </button>
+          
+            <!-- Sidebar -->
+            <div class="sidebar" id="sideBar">
+              <!-- bouton pour fermer la sidebar -->
+              <button id="close-btn" onclick="toggleSidebar()">
+                <img src="img/close icon.svg" alt="fermer le menu">
+              </button>
+              <a href="index.html" class="sidebar-links">
+                <i class="fas fa-home"></i> Accueil
+              </a>
+              <a href="info.html" class="sidebar-links">
+                <i class="fas fa-info-circle"></i> Info Essentiel
+              </a>
+              <a href="quiz.html" class="sidebar-links active">
+                <i class="fas fa-question-circle"></i> Quiz
+              </a>
+              <a href="soutient.html" class="sidebar-links ">
+                <i class="fas fa-hands-helping"></i> Soutient
+              </a>
+            </div>
+          </div>
+          
     </header>
 
     <main class="quiz">
